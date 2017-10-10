@@ -10,10 +10,8 @@ class VideoBackground extends React.Component {
     const style = {
       width: '100%',
       height: '100%',
-      position: 'center',
+      position: 'fixed',
       margin: 'auto',
-      top: '-25vh',
-      left: '-25vw',
       zIndex: -2
     }
 
