@@ -15,6 +15,16 @@ class VideoBackground extends React.Component {
       zIndex: -2
     }
 
+    const videoMask = {
+      backgroundColor: 'gray',
+      opacity: 0.5,
+      width: '100%',
+      height: '100%',
+      position: 'fixed',
+      margin: 'auto',
+      zIndex: -1
+    }
+
     const videoOptions = {
       src: '/coffee.mp4',
       autoPlay: true,
@@ -23,16 +33,18 @@ class VideoBackground extends React.Component {
     }
 
     return(
-      <div style={style}>
-        <VideoCover
-          videoOptions={videoOptions}
-          remeasureOnWindowResize
-          getResizeNotifier={resizeNotifier => {
-            this.setState({
-              resizeNotifier
-            })
-          }}
-        />
+      <div style={videoMask}>
+        <div style={style}>
+          <VideoCover
+            videoOptions={videoOptions}
+            remeasureOnWindowResize
+            getResizeNotifier={resizeNotifier => {
+              this.setState({
+                resizeNotifier
+              })
+            }}
+          />
+        </div>
       </div>
     )
   }

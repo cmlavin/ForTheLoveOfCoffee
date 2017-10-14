@@ -2,6 +2,7 @@ import React from 'react'
 import VideoBackground from './VideoBackground'
 import Navbar from './Navbar'
 import Title from '../Title'
+import Welcome from './Welcome'
 
 const Homepage = () => {
   return(
@@ -9,6 +10,7 @@ const Homepage = () => {
       <VideoBackground />
       <Navbar />
       <Title />
+      <Welcome />
     </div>
   )
 }
