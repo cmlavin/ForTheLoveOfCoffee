@@ -8,6 +8,7 @@
   font-family: 'Vast Shadow';
   font-size: 55px;
   text-align: center;
+  padding-top: 2%;
 }
 
 #welcome-text {
@@ -16,4 +17,7 @@
   text-align: center;
   width: 50%;
   margin: auto;
+  margin-top: 5%
+  border: black;
+  border-style: solid;
 }
