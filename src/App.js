@@ -11,11 +11,11 @@ class App extends React.Component {
   }
 
   renderLogin = () => {
-    return <Login />
+    return <Login login={this.login}/>
   }
 
   renderSignup = () => {
-    return <Signup />
+    return <Signup signup={this.signup}/>
   }
 
   render() {

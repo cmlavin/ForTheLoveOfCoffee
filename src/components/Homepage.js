@@ -10,7 +10,9 @@ const Homepage = () => {
     <div>
       <VideoBackground />
       <Navbar />
-      <Title />
+      <div id="homepage-title">
+        <Title />
+      </div>
       <Welcome />
       <Input label='Find' placeholder='Cafe name' />
       <Input label='in' placeholder='City' />
