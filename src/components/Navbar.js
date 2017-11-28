@@ -5,7 +5,9 @@ import { Button } from 'semantic-ui-react'
 const Navbar = () => {
   return(
     <div>
-      <Button className="button-navbar" basic>Write a Review</Button>
+      <Link to="/writereview">
+        <Button className="button-navbar" basic>Write a Review</Button>
+      </Link>
       <Link to="/login">
         <Button className="button-navbar" basic>Login</Button>
       </Link>
