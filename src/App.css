@@ -1,17 +1,47 @@
+h3 {
+  display: inline;
+}
+
+.ui.button {
+  background-color: #C97C5D;
+  border: 1px solid #763E27;
+  display: block;
+  margin: auto;
+}
+
+.ui.button:hover {
+  background-color: #DDAC98;
+}
+
 #header-div {
   background-color: #EDE3E4;
   padding-top: 1.5%;
   height: 70px;
 }
 
+#homepage-title {
+  padding-top: 2%;
+}
+
+#new-review-form-container {
+  border: thin solid black;
+  width: 50%;
+  margin: auto;
+  margin-top: 7%;
+  margin-bottom: 1%;
+}
+
+#new-review-form {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
 #title-text {
   font-family: 'Vast Shadow';
   font-size: 55px;
   text-align: center;
-}
-
-#homepage-title {
-  padding-top: 2%;
 }
 
 #welcome-text {

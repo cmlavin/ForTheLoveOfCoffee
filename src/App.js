@@ -29,7 +29,7 @@ class App extends React.Component {
         <Router>
           <div>
             <Route exact path='/' render={this.renderHomepage} />
-            <Route exact path='/writereview' render={this.renderWriteReview}
+            <Route exact path='/writereview' render={this.renderWriteReview} />
             <Route exact path='/login' render={this.renderLogin} />
             <Route exact path='/signup' render={this.renderSignup} />
           </div>
