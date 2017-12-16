@@ -7,17 +7,20 @@ h3 {
 }
 
 .ui.button {
-  background-color: #C97C5D;
-  border: 1px solid #763E27;
+  border: 1px solid #333745;
+}
+
+.ui.button:hover {
+  background: #17BEBB;
+}
+
+.ui.basic.button:hover {
+  background: #17BEBB!important;
 }
 
 .ui.button.form-button {
   display: block;
   margin: auto;
-}
-
-.ui.button:hover {
-  background-color: #DDAC98;
 }
 
 #header-div {
