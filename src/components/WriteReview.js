@@ -18,7 +18,7 @@ const WriteReview = () => {
           </Form.Field>
         </Form>
       </div>
-      <Button content='Submit your review'/>
+      <Button className="form-button" content='Submit your review'/>
     </div>
   )
 }

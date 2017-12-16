@@ -9,6 +9,9 @@ h3 {
 .ui.button {
   background-color: #C97C5D;
   border: 1px solid #763E27;
+}
+
+.ui.button.form-button {
   display: block;
   margin: auto;
 }
@@ -18,7 +21,7 @@ h3 {
 }
 
 #header-div {
-  background-color: #EDE3E4;
+  background-color: #EDE7E3;
   padding-top: 1.5%;
   height: 70px;
 }
@@ -55,6 +58,4 @@ h3 {
   width: 50%;
   margin: auto;
   margin-top: 5%;
-  border: black;
-  border-style: solid;
 }
