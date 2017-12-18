@@ -1,9 +1,9 @@
 import React from 'react'
-import { Input } from 'semantic-ui-react'
 import VideoBackground from './VideoBackground'
 import Navbar from './Navbar'
 import Title from '../Title'
 import Welcome from './Welcome'
+import Search from './Search'
 
 const Homepage = () => {
   return(
@@ -14,8 +14,7 @@ const Homepage = () => {
         <Title />
       </div>
       <Welcome />
-      <Input label='Find' placeholder='Cafe name' />
-      <Input label='in' placeholder='City' />
+      <Search />
     </div>
   )
 }

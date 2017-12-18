@@ -1,20 +1,20 @@
-export function addReview(review) {
+export const addReview = (review) => {
   return {
     type: "ADD_REVIEW",
-    review
+    payload: review
   }
 }
 
-export function updateReview(review) {
+export const updateReview = (review) => {
   return {
     type: "UPDATE_REVIEW",
-    review
+    payload: review
   }
 }
 
-export function deleteReview(review) {
+export const deleteReview = (review) => {
   return {
     type: "DELETE_REVIEW",
-    review
+    payload: review
   }
 }

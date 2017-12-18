@@ -1,8 +1,6 @@
-export function addCafe(cafe) {
+export const addCafe = (cafe) => {
   return {
     type: "ADD_CAFE",
-    cafe
+    payload: cafe
   }
 }
-
-export default {addCafe}
