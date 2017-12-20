@@ -2,7 +2,7 @@ function reviewsReducer(state = {
   user: '',
   cafe: '',
   review: '',
-  allReviews: [],
+  allReviews: ['Review 1', 'Review 2'],
   filteredReviews: [],
   filteredCafes: []
   }, action) {

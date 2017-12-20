@@ -7,10 +7,9 @@ import Review from '../components/Review'
 
 class ReviewsList extends React.Component {
 
-  //createReviewsListItems should return <Review />
   createReviewsListItems() {
     return(
-      this.props.reviews.map((review, i) => {return(<li key={i}><Review /></li>)})
+      this.props.reviews.allReviews.map((review, i) => {return(<li key={i}><Review review={review}/></li>)})
     )
   }
 
@@ -20,7 +19,7 @@ class ReviewsList extends React.Component {
         <Header />
         <div>
           <ul>
-            Placeholder text
+            {this.createReviewsListItems()}
           </ul>
         </div>
       </div>
@@ -43,5 +42,3 @@ function mapDispatchToProps(dispatch) {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ReviewsList)
-
-//{this.createReviewsListItems()}
