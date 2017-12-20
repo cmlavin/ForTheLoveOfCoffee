@@ -1,17 +1,22 @@
 import React from 'react';
 import {bindActionCreators} from 'redux';
-import {connect} from 'redux';
+import {connect} from 'react-redux';
+import Header from '../Header'
+import Cafe from '../components/Cafe'
 
 class CafesList extends React.Component {
 
   createCafeList = () => {
-    return this.props.cafes.map(cafe => cafe)
+    return this.props.cafes.map(cafe => {return(<Cafe />)})
   }
 
   render(){
     return(
       <div>
-        {this.createCafeList()}
+        <Header />
+        <div>
+          {this.createCafeList()}
+        </div>
       </div>
     )
   }

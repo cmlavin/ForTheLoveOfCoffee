@@ -3,7 +3,8 @@ function reviewsReducer(state = {
   cafe: '',
   review: '',
   allReviews: [],
-  filteredReviews: []
+  filteredReviews: [],
+  filteredCafes: []
   }, action) {
   switch(action.type) {
     case "ADD_REVIEW":

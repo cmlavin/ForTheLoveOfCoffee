@@ -1,21 +1,28 @@
 import React from 'react';
 import {bindActionCreators} from 'redux';
-import {connect} from 'redux';
+import {connect} from 'react-redux';
 import {addReview, updateReview, deleteReview} from '../actions/reviewsAction'
+import Header from '../Header'
+import Review from '../components/Review'
 
 class ReviewsList extends React.Component {
+
+  //createReviewsListItems should return <Review />
   createReviewsListItems() {
     return(
-      this.props.reviews.map((review, i) => {return(<li key={i}>{review.content}</li>)})
+      this.props.reviews.map((review, i) => {return(<li key={i}><Review /></li>)})
     )
   }
 
   render() {
     return(
       <div>
-        <ul>
-          {this.createReviewsListItems()}
-        </ul>
+        <Header />
+        <div>
+          <ul>
+            Placeholder text
+          </ul>
+        </div>
       </div>
     )
   }
@@ -36,3 +43,5 @@ function mapDispatchToProps(dispatch) {
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(ReviewsList)
+
+//{this.createReviewsListItems()}
